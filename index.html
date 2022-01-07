@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Curreny-Application</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+
+            <div id="headline"> <h1 class="text-muted text-center">
+                API-Based Currency-Converter
+            </h1></div>
+           
+            <p id="emailHelp" class="form-text text-muted">Select your country to convert...
+            </p>
+            <div id="messageWrapper"></div>
+            <div class="input-group mb-3 row g-3">
+                <label class="input-group-text" for="inputGroupSelect01">Countries</label>
+                <select id="form-selectOne" name="countriesA">
+                    <option selected>Choose...</option>
+
+                </select>
+            </div>
+            <div class="input-group mb-3 row g-3">
+                <label class="input-group-text" for="inputGroupSelect01">Countries</label>
+                <select id="form-selectTwo" name="countriesB">
+                    <option selected>Choose...</option>
+                </select>
+            </div>
+
+
+            <div class="w-form">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="number">Input Number only</label>
+                        <input type="number" class="form-control" id="number1" min="0" step="1"
+                            placeholder="type your number to convert a currency" />
+                        <small id="emailHelp" class="form-text text-muted">write here your amount to convert...
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Input Number only</label>
+                        <input type="text" class="form-control" id="number2" min="0" step="1"
+                            placeholder="type your number to convert a currency" />
+                        <small id="emailHelp" class="form-text text-muted">write here your amount to convert...
+                        </small>
+                    </div>
+
+                    <button class="btn btn-primary mt-3" id="button">
+                        Convert your currency
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
