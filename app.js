@@ -101,8 +101,6 @@ const UI = {
     });
 
     document.addEventListener("DOMContentLoaded", (e) => {
-      // const selectDrop = document.querySelector('#countries-b')
-
       this.addSelectDrop();
     });
   },
